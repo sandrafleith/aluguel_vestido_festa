@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+ <title>Table layout</title>
+
+ <link rel="stylesheet" href="style/main.css">
+ <link rel="stylesheet" href="/PAGES/script_4.css">
+ <script src="https://unpkg.com/sweetalert2@7.12.15/dist/sweetalert2.all.js"></script>
+ <script src="sweetalert2.all.min.js"></script>
+
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+</head>
+
+<body>
+
+
+  <div class="filter">
+
+ </div>
+
+ <table >
+
+  <!-- <td style="width:100px">100px</td>
+  <td style="width:200px">200px</td> -->
+
+ <tr style="font-size: 18px;font-weight: bold;">
+
+ <th>#</th>
+
+ <th>MARCA</th>
+
+ <th>REFERÊNCIA</th>
+
+ <th>TAMANHO </th>
+
+ <th>COR</th>
+
+ <th>ALUGUEL</th>
+
+ <th>IMAGEM</th>
+
+ </tr>
+
+
+  <tr>
+
+ <td style="width: 15px;" >1</td>
+
+ <td style="width: 150px;">ARITA</td>
+
+ <td style="width: 250px;" >ARITA-727</td>
+
+ <td style="width: 90px;">42 LONGO</td>
+
+ <td style="width: 250px;" >MAGENTA ESCURO</td>
+
+ <td style="width: 100px;">R$ 450,00</td>
+
+ <td style="width: 100px;"><button onclick="arita727();">Click me</button>
+
+  <p id="demo"></p>
+  
+
+  <!-- <input type="button" value="TURN ON" onclick="showImage();" />
+  <input type="button" value="TURN OFF" onclick="hideImage();" /> -->
+  <img id="loadingImage" src="/HOME/azulescuro.jpg" style="display:none" />
+
+
+<script>
+function arita727() {
+  document.getElementById('loadingImage').style.display = 'block';
+}
+
+
+</script>
+
+
+  
+  <script>
+
+    btnShowSweetAlert = document.querySelector
+      ('#arita727');
+    btnShowSweetAlert.addEventListener
+      (
+        'click', function () {
+          Swal.fire({
+            iconHtml: "<span style='text-decoration:bold;color:#377E47'>42</span>",
+            title: "<span style='font-size:20px'>PRETO</span>",
+            imageUrl: "/HOME/preto_b.jpg",
+            html: "<span style='font-size:18px;color:#377E47'><b>R$ 550,00</b><br></span>",
+            imageWidth: 430,
+            imageHeight: 400,
+
+            showClass: {
+              popup: `
+  animate__animated
+  animate__fadeInUp
+  animate__slow
+`
+            },
+            hideClass: {
+              popup: `
+  animate__animated
+  animate__fadeOutDown
+  animate__faster
+`
+            }
+
+
+          })
+
+
+
+        })
+
+      ;
+
+
+  </script>
+  
+  </td>
+
+ </tr>
+
+
+
+
+
+ <tr>
+
+ <td>2</td>
+
+ <td>jack</td>
+
+ <td>Duppont</td>
+
+ <td>1368</td>
+
+ <td>18 Dec 1962</td>
+
+ <td>2000$</td>
+
+ </tr>
+
+ <tr>
+
+ <td>3</td>
+
+ <td>Jean</td>
+
+ <td>leBon</td>
+
+ <td>1368</td>
+
+ <td>18 Nov 1972</td>
+
+ <td>4200$</td>
+
+ </tr>
+
+ <tr>
+
+ <td>4</td>
+
+ <td>Nadia</td>
+
+ <td>leBon</td>
+
+ <td>1368</td>
+
+ <td>18 Mar 1982</td>
+
+ <td>6300$</td>
+
+ </tr>
+
+ <tr>
+
+ <td>5</td>
+
+ <td>Nadia</td>
+
+ <td>leBon</td>
+
+ <td>1368</td>
+
+ <td>18 Mar 1982</td>
+
+ <td>6300$</td>
+
+ </tr>
+
+ <tr>
+
+ <td>6</td>
+
+ <td>Nadia</td>
+
+ <td>leBon</td>
+
+ <td>1368</td>
+
+ <td>18 Mar 1982</td>
+
+ <td>6300$</td>
+
+ </tr>
+
+ <tr>
+
+ <td>7</td>
+
+ <td>Nadia</td>
+
+ <td>leBon</td>
+
+ <td>1368</td>
+
+ <td>18 Mar 1982</td>
+
+ <td>6300$</td>
+
+ </tr>
+
+ <tr>
+
+ <td>8</td>
+
+ <td>Nadia</td>
+
+ <td>leBon</td>
+
+ <td>1368</td>
+
+ <td>18 Mar 1982</td>
+
+ <td>6300$</td>
+
+ </tr>
+
+ </table>
+
+
+ </body>
+
+</html>
